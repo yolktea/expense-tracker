@@ -1,0 +1,108 @@
+<!-- expense tracker :-3 input date description,amount ,use table submit
+show expense item on page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Expense Tracker</title>
+ <link
+ rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min
+.css"
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGM
+N5t9UJ0Z"
+ crossorigin="anonymous"
+ />
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container my-3">
+ <h1>Expense Manager</h1>
+ <br>
+ <div class="card">
+ <div class="card-body">
+ <h5 class="card-title">Add A Transaction</h5>
+ <p class="card-text">
+ <div class="form-group">
+ <label for="exampleFormControlTextarea1">
+ </label>
+ <table class="table">
+ <tr>
+ <td>Date of Transaction</td>
+ <td><input type="date" placeholder="DOT"
+name="DOT" id="DOT" style="width: 6cm;"></td>
+ </tr>
+ <tr>
+ <td>Description</td>
+ <td><input type="text"
+placeholder="Description for the transaction" name="desc" id="desc"
+style="width: 6cm;"></td>
+ </tr>
+ <tr>
+ <td>Amount</td>
+ <td><input type="text" placeholder="Amount for
+the transaction" name="amt" id="amt" style="width: 6cm;"></td>
+ </tr>
+ <tr>
+ <td rowspan="2">Select Type</td>
+ <td><input type="radio" placeholder="Type"
+name="Type" value="Spent" id="spent">Spent</td>
+ </tr>
+ <tr>
+ <td><input type="radio" placeholder="Type"
+name="Type" value="Earned">Earned</td>
+ </tr>
+ <tr>
+ <td>
+ <button class="btn btn-primary"
+id="subBtn">Submit</button>
+ </td>
+ <td>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <h2>Your Expense Report</h2>
+ </td>
+ </tr>
+ <tr>
+ <table class="table expenseReport"
+id="expenseReport">
+ <thead id="thead">
+ <tr>
+ <td><h2> NO TRANSACTIONS YET !!
+</h2></td>
+ </tr>
+ </thead>
+ <tbody class="tableBody" id="tableBody">
+ </tbody>
+ </table>
+ </tr>
+ </div>
+ </p>
+ </div>
+ </div>
+ </div>
+ <script
+ src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+O
+rCXaRkfj"
+ crossorigin="anonymous"
+ ></script>
+ <script
+src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu
+735Sk7lN"
+ crossorigin="anonymous"
+ ></script>
+ <script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.j
+s"
+integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYi
+JOMMV+rV"
+ crossorigin="anonymous"
+ ></script>
+ <script src="app.js"></script>
+</body>
+</html>
